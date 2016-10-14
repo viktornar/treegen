@@ -51,7 +51,7 @@ $ cd treegen
 And install all dev dependencies with command:
 
 ```bash
-$ npm install && npm install -g grunt-cli
+$ npm install && npm install -g gulp-cli
 ```
 
 Run gulp task:
