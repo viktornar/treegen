@@ -64,3 +64,4 @@ Application will be available at http://localhost:3000
 
 > **Note:**
 > I have used NodeJS 4 for developing.
+> Application was tested on latest Chrome, FF and Edge web bowser. Edge and IE is not supported

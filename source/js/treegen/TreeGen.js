@@ -5,9 +5,9 @@
 
 "use strict";
 
-var randomString = require("../utils/StringUtils.js").randomString;
-var getChildNodeTemplate = require("../template/Nodes.js").getChildNodeTemplate;
-var getRootNodeTemplate = require("../template/Nodes.js").getRootNodeTemplate;
+let randomString = require("../utils/StringUtils.js").randomString;
+let getChildNodeTemplate = require("../template/Nodes.js").getChildNodeTemplate;
+let getRootNodeTemplate = require("../template/Nodes.js").getRootNodeTemplate;
 
 class TreeGen {
   /**
@@ -38,12 +38,12 @@ class TreeGen {
   _getNode(label) {
     let nodeId = "childNode-" + randomString(4);
     let node = $(getChildNodeTemplate(nodeId, label));
-    // TODO: find better way to select add and remove node buttons. :nth-child(4) looks like a selector with a magic number.
-    node.find(":nth-child(4)").on("click", (e) => {
+    
+    node.find(`#btn-${nodeId}-add`).on("click", (e) => {
       this._addNode($(e.currentTarget).parent());
     });
 
-    node.find(":nth-child(5)").on("click", (e) => {
+    node.find(`#btn-${nodeId}-remove`).on("click", (e) => {
       this._removeNode($(e.currentTarget).parent());
     });
 

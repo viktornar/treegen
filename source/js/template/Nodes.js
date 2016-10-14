@@ -17,7 +17,7 @@ module.exports = {
               <div class="col-xs-4">
                 <input type="text" class="form-control" />
               </div>
-              <button class="btn btn-default">Add</button>
+              <button id="btn-${nodeId}-add" class="btn btn-default">Add</button>
             </div>`
   },
   /**
@@ -28,15 +28,14 @@ module.exports = {
    */
   "getChildNodeTemplate": (nodeId, label) => {
     return `<div id="${nodeId}" class="row tree-gen-child">
-              
               <div class="tree-gen-circle">
               </div>
               <label for="input-${nodeId}" class="tree-gen-inline-label">${label}</label>
               <div class="col-xs-4">
                 <input type="text" class="form-control" id="input-${nodeId}" />
               </div>
-              <button class="btn btn-default">Add</button>
-              <button class="btn btn-default">Remove</button>
+              <button id="btn-${nodeId}-add" class="btn btn-default">Add</button>
+              <button id="btn-${nodeId}-remove" class="btn btn-default">Remove</button>
             </div>`;
   }
 };

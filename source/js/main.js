@@ -6,4 +6,4 @@
 "use strict";
 
 let TreeGen = require('./treegen/TreeGen.js');
-new TreeGen($("#app"));
+let treeGen = new TreeGen($("#app"));
