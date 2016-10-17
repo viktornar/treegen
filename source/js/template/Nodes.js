@@ -18,7 +18,7 @@ module.exports = {
                 <input type="text" class="form-control" />
               </div>
               <button id="btn-${nodeId}-add" class="btn btn-default">Add</button>
-            </div>`
+            </div>`;
   },
   /**
    * Child node template
