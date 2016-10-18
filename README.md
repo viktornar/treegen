@@ -13,7 +13,7 @@ The main technologies (frameworks, libraries) that was used in project
 
 > **Note:**
 > The main reason why JQuery was chosen - this library is easy to use when you need to write some small piece of code for DOM manipulation and nothing more.
-> You can look at https://github.com/viktornar/treegen-react how to achieve the same functionality but in the hard way by using ReactJS.
+> You can look at [https://github.com/viktornar/treegen-react](https://github.com/viktornar/treegen-react)  how to achieve the same functionality but in the hard way by using ReactJS.
 
 How to run project
 -------------
